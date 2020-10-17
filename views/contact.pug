@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='/static/contact.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Bree+Serif&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+
+nav#navbar
+  #logo
+    img(src='./static/foodlogo.png')
+  ul
+    li.item
+      a(href='/') Home
+    li.item
+      a(href='/about') About Us
+    li.item
+      a(href='/price') Price-plan
+    li.item
+      a(href='/contact') Contact
+  .right
+    button.btn1 Sign IN
+    button.btn1 FAQs
+
+section#contact-section
+  .container
+    h2 Contact Us
+    p Email us and keep upto date with our latest news
+    .contact-form
+      // First grid
+      div
+        i.fa.fa-map-marker
+        span.form-info  192 City Boston Amercia #345
+        br
+        i.fa.fa-phone  
+        span.form-info  +92 00034567890
+        br
+        i.fa.fa-envelope
+        span.form-info  JhonDoe12@Gmail.com
+      div
+        form
+          input(type='text' placeholder='Your Name' required='')
+          input(type='text' placeholder='Last Name')
+          br
+          input(type='Email' placeholder='Email' required='')
+          br
+          input(type='text' placeholder='Subject of this message')
+          br
+          textarea(name='message' placeholder='Message' rows='5' required='')
+          br
+          button.submit Send Message

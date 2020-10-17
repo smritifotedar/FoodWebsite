@@ -1,0 +1,138 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='/static/price.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Bree+Serif&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+
+nav#navbar
+  #logo
+    img(src='./static/foodlogo.png')
+  ul
+    li.item
+      a(href='/') Home
+    li.item
+      a(href='/about') About Us
+    li.item
+      a(href='/price') Price-plan
+    li.item
+      a(href='/contact') Contact
+  .right
+    button.btn1 Sign IN
+    button.btn1 FAQs
+
+section#price
+  .container
+    h1 Price Plan
+    .row
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Sea food
+            p
+              | $0
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | Crab
+              li
+                i.fa.fa-check-circle
+                | Lobster
+              li
+                i.fa.fa-check-circle
+                | Prawns
+              li
+                i.fa.fa-check-circle
+                | Samon
+              li
+                i.fa.fa-times-check
+                | Tuna-Fish
+          .price-button
+            a.buy-btn(href='/contact') Order Now
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Hot &amp; Spicy
+            p
+              | $10
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | Honey chill potato
+              li
+                i.fa.fa-check-circle
+                | Spicy chicken
+              li
+                i.fa.fa-check-circle
+                | Spicy Jalapeno
+              li
+                i.fa.fa-check-circle
+                | Cheesy Pizza
+              li
+                i.fa.fa-check-circle
+                | Chicken Momos
+          .price-button
+            a.buy-btn(href='/contact') Order Now
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Healthy Food
+            p
+              | $0
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | Lamb
+              li
+                i.fa.fa-check-circle
+                | Chicken breasts
+              li
+                i.fa.fa-check-circle
+                | Bacon &amp; egg cups
+              li
+                i.fa.fa-check-circle
+                | Banana Smoothie
+              li
+                i.fa.fa-check-circle
+                | Pork Tacos
+          .price-button
+            a.buy-btn(href='/contact') Order Now
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Drinks
+            p
+              | $250
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | Martini
+              li
+                i.fa.fa-check-circle
+                | Whiskey sour
+              li
+                i.fa.fa-check-circle
+                | French 75
+              li
+                i.fa.fa-check-circle
+                | Manhattan
+              li
+                i.fa.fa-check-circle
+                | Mimosa
+          .price-button
+            a.buy-btn(href='/contact') Order now

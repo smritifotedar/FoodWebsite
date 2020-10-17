@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='/static/style1.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Bree+Serif&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+nav#navbar
+  #logo
+    img(src='./static/foodlogo.png')
+  ul
+    li.item
+      a(href='/') Home
+    li.item
+      a(href='#') About Us
+    li.item
+      a(href='/price') Price-plan
+    li.item
+      a(href='/contact') Contact
+  .right
+    button.btn1 Sign IN
+    button.btn1 FAQs
+#slider
+  #headerSlider.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#headerSlider' data-slide-to='0')
+      li(data-target='#headerSlider' data-slide-to='1')
+      li(data-target='#headerSlider' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.img-fluid(src='./static/food2.jpg' alt='')
+        .carousel-caption
+          h5 Best Service And Joyful Experience
+      .carousel-item
+        img.d-block.img-fluid(src='./static/food3.jpg' alt='')
+        .carousel-caption
+          h5 Healthy And cooked with Perfection
+      .carousel-item
+        img.d-block.img-fluid(src='./static/food4.jpg' alt='')
+        .carousel-caption
+          h5 24/7 Open For Dine-In
+    a.carousel-control-prev(href='#headerSlider' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#headerSlider' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+.myclass
+  h3 Cooking &nbsp; gone &nbsp; wrong?
+  p Order from your favourite restraunts
+  button.btn  Order Now
+section#about
+  div
+    h2.title-text About Us
+  .about-center
+    article.about
+      .about-icon
+        i.fa.fa-glass(aria-hidden='true')
+      .about-text
+        h2.about-subtitle Drinks
+        p.about-info Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+    article.about
+      .about-icon
+        i.fa.fa-cutlery(aria-hidden='true')
+      .about-text
+        h2.about-subtitle Healthy Food
+        p.about-info Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+    article.about
+      .about-icon
+        i.fa.fa-apple(aria-hidden='true')
+      .about-text
+        h2.about-subtitle Organic Food
+        p.about-info Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+    article.about
+      .about-icon
+        i.fa.fa-space-shuttle(aria-hidden='true')
+      .about-text
+        h2.about-subtitle Sea Food
+        p.about-info Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
+    article.about
+      .about-icon
+        i.fa.fa-fire(aria-hidden='true')
+      .about-text
+        h2.about-subtitle Hot &amp; Spicy
+        p.about-info Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quos.
